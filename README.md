@@ -22,7 +22,7 @@ pod 'TLCore'
 
 ## Author
 
-zhanqijie, jasonjie.zhan@tron.network
+TLCore
 
 ## License
 
