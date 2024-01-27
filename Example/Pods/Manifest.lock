@@ -760,7 +760,7 @@ CHECKOUT OPTIONS:
     :commit: e0d9766042323d2371e1c1da625c964a483fb88f
     :git: https://github.com/TRON-US/TrustKeystore
   web3swift.pod:
-    :commit: cf523128dd024b31f4449e63e9578b05e3fb85b4
+    :commit: 4e8ed3b0d07d95c1d837107b7ee8ed6ef586da30
     :git: https://github.com/TRON-US/web3swift
 
 SPEC CHECKSUMS:
@@ -781,11 +781,11 @@ SPEC CHECKSUMS:
   scrypt.c: b42ae06183251329d2b2c620c226fb541a4a3592
   secp256k1.c: db47b726585d80f027423682eb369729e61b3b20
   SipHash: fad90a4683e420c52ef28063063dbbce248ea6d4
-  TLCore: 2e3da70b989c0470283c4fa536be13bf5ab74353
+  TLCore: 51632ae2b942b7de9bb472afcbd64f379cd18324
   TrezorCrypto: bfeea47a052dca2c77d4a39e1e183865e52de14d
   TrustCore: 84fea3396e8bef4968d81ce9302f5a07fd62a2fc
   TrustKeystore: 922024abc6c1e4701d928b143b28391a8565c5d6
-  web3swift.pod: 0b6b48f4e9bfc54ee8545c94e8271b1af8658e98
+  web3swift.pod: 8f61d4573bd8e2f78695f1fdd8894ef5fdf23fd5
 
 PODFILE CHECKSUM: fcd0386a3d220905ea5bd61c4e8bd58ea23cbb29
 
