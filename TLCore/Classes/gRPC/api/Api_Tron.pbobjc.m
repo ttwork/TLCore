@@ -23,7 +23,7 @@
 
 #import <stdatomic.h>
 
-#import "Api.pbobjc.h"
+#import "Api_Tron.pbobjc.h"
 #import "Tron.pbobjc.h"
 #import "Annotations.pbobjc.h"
 #import "AssetIssueContract.pbobjc.h"

@@ -76,7 +76,7 @@ TODO: Add long description of the pod here.
        "TLCore/Classes/gRPC/core/contract/Common.pbobjc.{h,m}",
        "TLCore/Classes/gRPC/api/Zksnark.pbobjc.{h,m}",
        "TLCore/Classes/gRPC/google/protobuf/Descriptor.pbobjc.{h,m}",
-       "TLCore/Classes/gRPC/api/Api.pbobjc.{h,m}"
+       "TLCore/Classes/gRPC/api/Api_Tron.pbobjc.{h,m}"
        sp.requires_arc = false
    end
 

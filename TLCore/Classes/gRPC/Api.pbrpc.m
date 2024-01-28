@@ -1,6 +1,6 @@
 #if !defined(GPB_GRPC_PROTOCOL_ONLY) || !GPB_GRPC_PROTOCOL_ONLY
 #import "Api.pbrpc.h"
-#import "Api.pbobjc.h"
+#import "Api_Tron.pbobjc.h"
 #import <ProtoRPC/ProtoRPC.h>
 #import <RxLibrary/GRXWriter+Immediate.h>
 

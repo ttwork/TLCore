@@ -11,7 +11,7 @@
 #endif
 
 #import "Api.pbrpc.h"
-#import "Api.pbobjc.h"
+#import "Api_Tron.pbobjc.h"
 #import "Zksnark.pbobjc.h"
 #import "AccountContract.pbobjc.h"
 #import "AssetIssueContract.pbobjc.h"
@@ -37,7 +37,7 @@
 #import "Common.pbobjc.h"
 #import "Zksnark.pbobjc.h"
 #import "Descriptor.pbobjc.h"
-#import "Api.pbobjc.h"
+#import "Api_Tron.pbobjc.h"
 
 FOUNDATION_EXPORT double TLCoreVersionNumber;
 FOUNDATION_EXPORT const unsigned char TLCoreVersionString[];
