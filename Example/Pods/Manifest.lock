@@ -750,7 +750,7 @@ SPEC CHECKSUMS:
   secp256k1.c: db47b726585d80f027423682eb369729e61b3b20
   SipHash: fad90a4683e420c52ef28063063dbbce248ea6d4
   SwiftProtobuf: 407a385e97fd206c4fbe880cc84123989167e0d1
-  TLCore: cfedc2cc2eb604b2f346f7dd99d5749c9925c2ef
+  TLCore: 7e29b634f8529a04cb4840c97ec5f90a108b1995
   TrezorCrypto: bfeea47a052dca2c77d4a39e1e183865e52de14d
   TronCore: d66f073a7dcc614f45ebdfa936aaaee2be4250fa
   TronKeystore: db801d55ff046a910fe7e4826b858cac9267bccd
