@@ -17,11 +17,11 @@ target 'TLCore_Example' do
 #  pod '!ProtoCompiler', '3.21.5'
 #  pod '!ProtoCompiler-gRPCPlugin', '1.49.0'
   
-  pod 'TrustKeystore', :git => 'https://github.com/TRON-US/TrustKeystore', :branch => 'TrustKeystore_0.4.0'
-  pod 'TrustCore', :git => 'https://github.com/TRON-US/TrustCore', :branch => 'TrustCore_0.0.7'
-  pod 'TrezorCrypto', :git => 'https://github.com/TRON-US/trezor-crypto-ios', inhibit_warnings: true
-  pod 'CryptoSwift', :git => 'https://github.com/TRON-US/CryptoSwift', :branch => 'stack'
-  pod 'web3swift.pod', :git => 'https://github.com/TRON-US/web3swift', :branch => 'master'
+#  pod 'TrustKeystore', :git => 'https://github.com/TRON-US/TrustKeystore', :branch => 'TrustKeystore_0.4.0'
+#  pod 'TrustCore', :git => 'https://github.com/TRON-US/TrustCore', :branch => 'TrustCore_0.0.7'
+#  pod 'TrezorCrypto', :git => 'https://github.com/TRON-US/trezor-crypto-ios', inhibit_warnings: true
+#  pod 'CryptoSwift', :git => 'https://github.com/TRON-US/CryptoSwift', :branch => 'stack'
+#  pod 'web3swift.pod', :git => 'https://github.com/TRON-US/web3swift', :branch => 'master'
 
   target 'TLCore_Tests' do
     inherit! :search_paths

@@ -1,6 +1,6 @@
 import UIKit
-import TrustKeystore
-import TrustCore
+import TronKeystore
+import TronCore
 import web3swift
 import CryptoSwift
 
@@ -40,7 +40,7 @@ class MemoryAESPasswordModel: NSObject {
 
 //MARK: - Create
 extension TLWalletCore {
-    public func createWalletAccount(password: String, completion: @escaping (Result<TrustKeystore.Account, KeystoreError>) -> Void) {
+    public func createWalletAccount(password: String, completion: @escaping (Result<TronKeystore.Account, KeystoreError>) -> Void) {
         do {
             let account = try keyStore.createAccount(password: password, type: .hierarchicalDeterministicWallet)
             completion(.success(account))

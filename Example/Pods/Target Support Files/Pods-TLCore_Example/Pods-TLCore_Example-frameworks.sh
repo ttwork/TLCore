@@ -182,10 +182,12 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SipHash/SipHash.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftProtobuf/SwiftProtobuf.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TLCore/TLCore.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TrezorCrypto/TrezorCrypto.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/TrustCore/TrustCore.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/TrustKeystore/TrustKeystore.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TronCore/TronCore.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TronKeystore/TronKeystore.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TronWeb3Swift/web3swift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/abseil/absl.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework"
@@ -194,7 +196,6 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/keccak.c/keccak.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/scrypt.c/scrypt.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/secp256k1.c/secp256k1.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/web3swift.pod/web3swift.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework"
@@ -203,10 +204,12 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SipHash/SipHash.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftProtobuf/SwiftProtobuf.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TLCore/TLCore.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TrezorCrypto/TrezorCrypto.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/TrustCore/TrustCore.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/TrustKeystore/TrustKeystore.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TronCore/TronCore.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TronKeystore/TronKeystore.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TronWeb3Swift/web3swift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/abseil/absl.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework"
@@ -215,7 +218,6 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/keccak.c/keccak.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/scrypt.c/scrypt.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/secp256k1.c/secp256k1.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/web3swift.pod/web3swift.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

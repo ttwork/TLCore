@@ -59,6 +59,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SwiftProtobuf.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>TLCore.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -69,12 +74,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>TrustCore.xcscheme</key>
+		<key>TronCore.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>TrustKeystore.xcscheme</key>
+		<key>TronKeystore.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>TronWeb3Swift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -120,11 +130,6 @@
 			<false/>
 		</dict>
 		<key>secp256k1.c.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>web3swift.pod.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

@@ -1,7 +1,7 @@
 //
 //  CryptoSwift
 //
-//  Copyright (C) 2014-2017 Marcin Krzyżanowski <marcin@krzyzanowskim.com>
+//  Copyright (C) 2014-2022 Marcin Krzyżanowski <marcin@krzyzanowskim.com>
 //  This software is provided 'as-is', without any express or implied warranty.
 //
 //  In no event will the authors be held liable for any damages arising from the use of this software.
@@ -18,13 +18,10 @@ import Foundation
 extension Data {
   /// Two octet checksum as defined in RFC-4880. Sum of all octets, mod 65536
   public func checksum() -> UInt16 {
-    var s: UInt32 = 0
-    let bytesArray = bytes
-    for i in 0 ..< bytesArray.count {
-      s = s + UInt32(bytesArray[i])
+    let s = self.withUnsafeBytes { buf in
+        return buf.lazy.map(UInt32.init).reduce(UInt32(0), +)
     }
-    s = s % 65536
-    return UInt16(s)
+    return UInt16(s % 65535)
   }
 
   public func md5() -> Data {
@@ -40,10 +37,6 @@ extension Data {
   }
 
   public func sha256() -> Data {
-    Data( Digest.sha256(bytes))
-  }
-    
-  public func sha256T() -> Data {
     Data( Digest.sha256(bytes))
   }
 
@@ -90,10 +83,6 @@ extension Data {
   }
 
   public var bytes: Array<UInt8> {
-    Array(self)
-  }
-
-  public var bytesT: Array<UInt8> {
     Array(self)
   }
 

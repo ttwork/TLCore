@@ -1,7 +1,7 @@
 //
 //  CryptoSwift
 //
-//  Copyright (C) 2014-2017 Marcin Krzyżanowski <marcin@krzyzanowskim.com>
+//  Copyright (C) 2014-2022 Marcin Krzyżanowski <marcin@krzyzanowskim.com>
 //  This software is provided 'as-is', without any express or implied warranty.
 //
 //  In no event will the authors be held liable for any damages arising from the use of this software.
@@ -14,32 +14,48 @@
 //
 extension Collection where Self.Element == UInt8, Self.Index == Int {
   // Big endian order
+  @inlinable
   func toUInt32Array() -> Array<UInt32> {
-    if isEmpty {
+    guard !isEmpty else {
       return []
     }
 
-    var result = Array<UInt32>(reserveCapacity: 16)
-    for idx in stride(from: startIndex, to: endIndex, by: 4) {
-      let val = UInt32(bytes: self, fromIndex: idx).bigEndian
-      result.append(val)
+    let c = strideCount(from: startIndex, to: endIndex, by: 4)
+    return Array<UInt32>(unsafeUninitializedCapacity: c) { buf, count in
+      var counter = 0
+      for idx in stride(from: startIndex, to: endIndex, by: 4) {
+        let val = UInt32(bytes: self, fromIndex: idx).bigEndian
+        buf[counter] = val
+        counter += 1
+      }
+      count = counter
+      assert(counter == c)
     }
-
-    return result
   }
 
   // Big endian order
+  @inlinable
   func toUInt64Array() -> Array<UInt64> {
-    if isEmpty {
+    guard !isEmpty else {
       return []
     }
 
-    var result = Array<UInt64>(reserveCapacity: 32)
-    for idx in stride(from: startIndex, to: endIndex, by: 8) {
-      let val = UInt64(bytes: self, fromIndex: idx).bigEndian
-      result.append(val)
+    let c = strideCount(from: startIndex, to: endIndex, by: 8)
+    return Array<UInt64>(unsafeUninitializedCapacity: c) { buf, count in
+      var counter = 0
+      for idx in stride(from: startIndex, to: endIndex, by: 8) {
+        let val = UInt64(bytes: self, fromIndex: idx).bigEndian
+        buf[counter] = val
+        counter += 1
+      }
+      count = counter
+      assert(counter == c)
     }
-
-    return result
   }
+}
+
+@usableFromInline
+func strideCount(from: Int, to: Int, by: Int) -> Int {
+    let count = to - from
+    return count / by + (count % by > 0 ? 1 : 0)
 }
