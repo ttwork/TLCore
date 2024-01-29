@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  TLCore
-//
-//  Created by zhanqijie on 01/27/2024.
-//  Copyright (c) 2024 zhanqijie. All rights reserved.
-//
 
 import UIKit
 

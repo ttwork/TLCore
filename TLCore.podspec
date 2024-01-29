@@ -65,12 +65,6 @@ TODO: Add long description of the pod here.
    s.dependency '!ProtoCompiler', '3.21.5'
    s.dependency '!ProtoCompiler-gRPCPlugin', '1.49.0'
    
-#   s.dependency 'TrustKeystore'
-#   s.dependency 'TrustCore'
-#   s.dependency 'TrezorCrypto'
-#   s.dependency 'CryptoSwift'
-#   s.dependency 'web3swift.pod'
-
    s.dependency 'TronWeb3Swift'
    s.dependency 'TronCore'
    s.dependency 'TronKeystore'
